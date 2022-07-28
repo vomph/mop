@@ -5,9 +5,6 @@ phases:
   install:
     runtime-versions:
       java: openjdk8
-      commands:
-        - pip install --upgrade awscli
-    runtime-version:
       java: corretto8
       docker: 18
   pre_build:
