@@ -3,6 +3,10 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      java: openjdk8
+      commands:
+        - pip install --upgrade awscli
     runtime-version:
       java: corretto8
       docker: 18
@@ -32,5 +36,5 @@ phases:
       - cat imagedefinitions.json
 artifacts:
   files:
-   - imagedefinitions.json
-   - target/auth-service.jar
+    - imagedefinitions.json
+    - target/auth-service.jar
